@@ -1,0 +1,74 @@
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 100%;
+}
+th, 
+td {
+    border: 1px dashed;
+    padding: 3px 10px;
+    text-align: left;
+}
+th:nth-child(3), 
+td:nth-child(3) {
+    text-align: right;
+}
+td:nth-child(4),
+td:nth-child(5){
+    text-align: center;
+}
+td[colspan="5"] {
+    color: #999;
+}
+form div{
+    margin-top: 10px;
+}
+form div input[type="text"],
+form div select{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+section > div,
+form > div {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+form label {
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="number"],
+form input[type="submit"],
+input[type="button"],
+form select {
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+form label,
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+form input[type="checkbox"]:checked + label + div select,
+form input[type="checkbox"] + label + div input[type="text"] {
+    display: none;
+}
+form input[type="checkbox"]:checked + label + div input[type="text"]{
+    display: block;
+}
+section > div {
+    background-color: #FCF3CF;
+    border: 2px solid #d9534f;
+}
+section > div input[type="submit"]:hover,
+section > div input[type="submit"]:focus {
+    background-color: #ffcccb;
+    color: #2880b9;
+    text-decoration: none;
+}
+section h2 + p {
+    color: red;
+}

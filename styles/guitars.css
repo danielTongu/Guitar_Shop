@@ -1,0 +1,16 @@
+/* guitars.css */
+
+section div,
+section img{
+    margin: 0 auto !important;
+    text-align: center;
+}
+section img {
+    width: auto !important;  /* Maintain aspect ratio */
+    height: 100% !important;
+}
+
+section img + div {
+    position: relative !important;
+    margin-top: .5em !important;
+}

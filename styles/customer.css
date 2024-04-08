@@ -1,0 +1,77 @@
+/*customer.css*/
+
+body {
+    width: 1200px;
+}
+main section {
+    width: 980px;
+}
+main section::after {
+    content: '';
+    display:block;
+    clear: both; /* clear floats of billing & shipping forms */
+}
+main form {
+    margin: 5px;
+    border: 3px solid;
+    padding: 10px;
+    box-sizing: border-box;
+}
+main form *:not(:last-child){
+    margin-bottom: 3px;
+}
+main form label {
+    display:inline-block;
+    width: calc(30% - 10px);
+}
+main form:first-child label {
+    width: calc((1/6) * 100%);
+}
+main form:first-child label + div {
+    position: relative;
+}
+main form:first-child input + i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: gray;
+}
+main form:first-child label + div input {
+    box-sizing: border-box;
+    width: 100%;
+}
+main form input[name='confirmation'],
+main form input[name="first_name"],
+main form input[name="last_name"],
+main form input[name="email_address"],
+main form label + div {
+    box-sizing: border-box;
+    display: inline-block;
+    width: calc((2/5) * 100%);
+}
+main form input[name='confirmation'] {
+    color: red;
+    border: none;
+}
+main form:not(:first-child) input[type='text'] {
+    width: calc(70% - 10px);
+}
+main form:not(:first-child) select {
+    max-width: calc(70% - 10px);
+}
+main form:nth-child(2) {
+    float: left;
+    width: calc(50% - 10px);
+}
+main form:nth-child(3) {
+    float: right;
+    width: calc(50% - 10px);
+}
+main button[type='submit'] {
+    margin-top: 15px;
+}
+main .invalid {
+    background-color: rgba(247, 207, 105, 0.41);
+}

@@ -1,0 +1,35 @@
+/* customer_login.css */
+
+main form label {
+    display: inline-block;
+    width: calc(21% - 10px);
+    margin-right: 10px;
+}
+main form input[name="password"] {
+    box-sizing: border-box;
+    width: 100%;
+}
+main form input[type="email"],
+main form > div:first-of-type {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: calc(79% - 10px);
+}
+main div input[value="Login"]{
+    float: right;
+}
+main div input[value="Cancel"] {
+    margin-bottom: 25px;
+}
+main form > div:first-of-type {
+    position: relative;
+}
+main form  > div i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: gray;
+}
